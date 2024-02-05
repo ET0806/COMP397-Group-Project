@@ -14,3 +14,19 @@ The following packages were updated:
   com.unity.test-framework from version 1.1.31 to 1.1.33
   com.unity.timeline from version 1.7.1 to 1.7.6
   com.unity.visualscripting from version 1.7.8 to 1.9.1
+
+=== Sun Feb  4 19:01:24 2024
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were updated:
+  com.unity.postprocessing from version 2.3.0 to 3.2.2
+
+=== Sun Feb  4 19:01:24 2024
+
+Packages were changed.
+Update Mode: mergeDefaultDependencies
+
+The following packages were added:
+  com.unity.postprocessing@3.2.2

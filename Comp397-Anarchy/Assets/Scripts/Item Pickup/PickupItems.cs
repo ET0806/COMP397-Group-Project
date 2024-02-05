@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PickupItems : MonoBehaviour
 {
+    [SerializeField] private AudioSource shootSound;
     public GameObject gunName;
     public Rigidbody rb;
     public BoxCollider coll;
@@ -37,11 +38,20 @@ public class PickupItems : MonoBehaviour
         //picks up the gun 
         if (!equipped && distanceToPlayer.magnitude <= PickupRange && Input.GetKeyDown(KeyCode.E) && !slotFull) {
             pickup();
+              
         }
 
         //drops gun
         if(equipped && Input.GetKeyDown(KeyCode.Q)){
             drop();
+        }
+
+         if (equipped && Input.GetButtonDown("Fire1"))
+        {
+            if (shootSound != null)
+            {
+                shootSound.Play();
+            }
         }
     }
 

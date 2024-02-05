@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Bettermovement : MonoBehaviour
 {
+	[SerializeField] private AudioSource jumpSound;
+
+
 	public CharacterController controller;
 	public float speed = 6f;
 	public float turnSmoothTime = 0.1f;
@@ -47,7 +50,9 @@ public class Bettermovement : MonoBehaviour
 
         // Changes the height position of the player..
         if (Input.GetButtonDown("Jump") && (groundedPlayer == true) || Input.GetButtonDown("Jump") && jumpValue < 2)
+
         {
+			jumpSound.Play();
 		if (jumpValue == 1f){
 		gravityValue = gravityValue - 25f;
 		playerVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravityValue) * 2f;
@@ -57,6 +62,7 @@ public class Bettermovement : MonoBehaviour
 		jumpValue = jumpValue + 1;
 		isTouchingGround = false;
         }
+		
 
         playerVelocity.y += gravityValue * Time.deltaTime;
         controller.Move(playerVelocity * Time.deltaTime);
