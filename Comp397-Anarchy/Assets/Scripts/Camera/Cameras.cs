@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class Cameras : MonoBehaviour
 {
@@ -11,7 +12,15 @@ public class Cameras : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = target.position + offset;
+        if (PauseMenu.paused)
+        {
+            
+            transform.position = target.position;
+        }
+        else
+        {
+            transform.position = target.position + offset;
+        }
     }
 }
 

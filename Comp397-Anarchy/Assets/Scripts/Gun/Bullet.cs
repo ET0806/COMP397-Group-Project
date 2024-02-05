@@ -12,10 +12,10 @@ public class Bullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-    	if ( Input.GetButtonDown("Fire1") && PickupItems.equipped == true)
+    	if ( Input.GetButtonDown("Fire1") && PickupItems.equipped == true && PauseMenu.paused == false)
         
         {
-          if (soundShoot != null)
+          if (soundShoot != null !& PauseMenu.paused == true)
             {
                 soundShoot.Play();
             }

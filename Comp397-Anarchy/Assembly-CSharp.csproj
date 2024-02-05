@@ -62,6 +62,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Menu\MainMenu.cs" />
     <Compile Include="Assets\Scripts\Gun\GunRotation.cs" />
+    <Compile Include="Assets\Scripts\Pause Menu\PauseMenu.cs" />
     <Compile Include="Assets\Sci-Fi UI\Demo_Assets\scripts\GUI_Demo.cs" />
     <Compile Include="Assets\Scripts\Gun\size.cs" />
     <Compile Include="Assets\Scripts\Camera\Cameras.cs" />
@@ -70,6 +71,7 @@
     <Compile Include="Assets\Scripts\Gun\DestroyForBullet.cs" />
     <Compile Include="Assets\Scripts\Item Pickup\PickupItems.cs" />
     <Compile Include="Assets\Scripts\Gun\Raycast.cs" />
+    <Compile Include="Assets\Scripts\Game Over Screen\GameOver.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

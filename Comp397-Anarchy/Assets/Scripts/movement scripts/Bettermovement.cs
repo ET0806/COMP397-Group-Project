@@ -33,7 +33,6 @@ public class Bettermovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-	
 	//for jumping and gravity 
 	if(isTouchingGround){
 		groundedPlayer = true;
