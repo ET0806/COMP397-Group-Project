@@ -65,10 +65,13 @@
     <Compile Include="Assets\Scripts\Pause Menu\PauseMenu.cs" />
     <Compile Include="Assets\Sci-Fi UI\Demo_Assets\scripts\GUI_Demo.cs" />
     <Compile Include="Assets\Scripts\Gun\size.cs" />
+    <Compile Include="Assets\Scripts\movement scripts\EnemyController.cs" />
     <Compile Include="Assets\Scripts\Camera\Cameras.cs" />
     <Compile Include="Assets\Scripts\movement scripts\Bettermovement.cs" />
     <Compile Include="Assets\Scripts\Gun\Bullet.cs" />
     <Compile Include="Assets\Scripts\Gun\DestroyForBullet.cs" />
+    <Compile Include="Assets\Scripts\movement scripts\PathFinding.cs" />
+    <Compile Include="Assets\Scripts\movement scripts\EnemyAi.cs" />
     <Compile Include="Assets\Scripts\Item Pickup\PickupItems.cs" />
     <Compile Include="Assets\Scripts\Gun\Raycast.cs" />
     <Compile Include="Assets\Scripts\Camera\MinimapScript.cs" />
