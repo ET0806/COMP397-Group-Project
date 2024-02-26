@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.AI;
 
  //This is an Enemy ai pathfinder too but it is a bit fast
-public class EnemyController : MonoBehaviour
+public class EnemyController : MonoBehaviour, GameDataPersistence
 {
     public Transform player;  // Reference to the player's transform
 
@@ -23,6 +23,16 @@ public class EnemyController : MonoBehaviour
 
         // Store the original chase speed for later use
         originalChaseSpeed = navMeshAgent.speed;
+    }
+
+    public void LoadData(GameData data)
+    {
+        this.transform.position = data.enemyPosition;
+    }
+
+    public void SaveData(ref GameData data)
+    {
+        data.enemyPosition = this.transform.position;
     }
 
     void Update()

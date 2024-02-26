@@ -313,6 +313,7 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.13f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Sci-Fi UI/Demo_Assets/scripts/GUI_Demo.cs"
 "Assets/Scripts/Camera/Cameras.cs"
+"Assets/Scripts/Camera/MinimapScript.cs"
 "Assets/Scripts/Game Over Screen/GameOver.cs"
 "Assets/Scripts/Gun/Bullet.cs"
 "Assets/Scripts/Gun/DestroyForBullet.cs"
@@ -322,6 +323,9 @@
 "Assets/Scripts/Item Pickup/PickupItems.cs"
 "Assets/Scripts/Menu/MainMenu.cs"
 "Assets/Scripts/movement scripts/Bettermovement.cs"
+"Assets/Scripts/movement scripts/EnemyAi.cs"
+"Assets/Scripts/movement scripts/EnemyController.cs"
+"Assets/Scripts/movement scripts/PathFinding.cs"
 "Assets/Scripts/Pause Menu/PauseMenu.cs"
 -langversion:9.0
 

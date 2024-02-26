@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PickupItems : MonoBehaviour
+public class PickupItems : MonoBehaviour, GameDataPersistence
 {
     [SerializeField] private AudioSource shootSound;
     public GameObject gunName;
@@ -19,6 +19,8 @@ public class PickupItems : MonoBehaviour
     
 
     public void Start(){
+        equipped = false;
+        slotFull = false;
         if(!equipped){
             rb.isKinematic = false;
             coll.isTrigger = false;
@@ -30,6 +32,16 @@ public class PickupItems : MonoBehaviour
             slotFull = true;
         }
 
+    }
+
+    public void LoadData(GameData data)
+    {
+        this.transform.position = data.gun1Position;
+    }
+
+    public void SaveData(ref GameData data)
+    {
+        data.gun1Position = this.transform.position;
     }
 
     private void Update(){

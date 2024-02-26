@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bettermovement : MonoBehaviour
+public class Bettermovement : MonoBehaviour, GameDataPersistence
 {
 	[SerializeField] private AudioSource jumpSound;
 
@@ -28,6 +28,16 @@ public class Bettermovement : MonoBehaviour
 		Cursor.visible = false;
     	controller = GetComponent<CharacterController>();
 		isTouchingGround = false;
+    }
+
+	public void LoadData(GameData data)
+	{
+		this.transform.position = data.playerPosition;
+	}
+
+    public void SaveData(ref GameData data)
+    {
+		data.playerPosition = this.transform.position;
     }
 
     // Update is called once per frame
