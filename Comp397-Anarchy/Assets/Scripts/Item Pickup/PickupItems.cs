@@ -5,6 +5,7 @@ using UnityEngine;
 public class PickupItems : MonoBehaviour, GameDataPersistence
 {
     [SerializeField] private AudioSource shootSound;
+    public GameObject invWeapon;
     public GameObject gunName;
     public Rigidbody rb;
     public BoxCollider coll;
@@ -21,7 +22,8 @@ public class PickupItems : MonoBehaviour, GameDataPersistence
     public void Start(){
         equipped = false;
         slotFull = false;
-        if(!equipped){
+        invWeapon.SetActive(false);
+        if (!equipped){
             rb.isKinematic = false;
             coll.isTrigger = false;
         }
@@ -85,7 +87,7 @@ public class PickupItems : MonoBehaviour, GameDataPersistence
         if (gunName.name == "Gun"){
             transform.localScale = new Vector3(0.2f, 0.2f, 0.8f);
         }
-
+        invWeapon.SetActive(true);
     }
 
     private void drop(){
@@ -105,5 +107,7 @@ public class PickupItems : MonoBehaviour, GameDataPersistence
         //add force to throw gun 
         rb.AddForce(cam.forward * dropForwardForce, ForceMode.Impulse);
         rb.AddForce(cam.up * dropUpwardForce, ForceMode.Impulse);
+
+        invWeapon.SetActive(false);
     }
 }
