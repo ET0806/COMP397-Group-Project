@@ -387,6 +387,7 @@
 "Assets/Scripts/Health/Health.cs"
 "Assets/Scripts/Item Pickup/PickupItems.cs"
 "Assets/Scripts/Menu/MainMenu.cs"
+"Assets/Scripts/Menu/Tutorial.cs"
 "Assets/Scripts/movement scripts/Bettermovement.cs"
 "Assets/Scripts/movement scripts/EnemyAi.cs"
 "Assets/Scripts/movement scripts/EnemyController.cs"

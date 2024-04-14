@@ -84,6 +84,7 @@
     <Compile Include="Assets\Scripts\Gun\BulletsPooledManager.cs" />
     <Compile Include="Assets\Scripts\Gun\Raycast.cs" />
     <Compile Include="Assets\Scripts\Camera\MinimapScript.cs" />
+    <Compile Include="Assets\Scripts\Menu\Tutorial.cs" />
     <Compile Include="Assets\Scripts\Game Over Screen\GameOver.cs" />
   </ItemGroup>
   <ItemGroup>

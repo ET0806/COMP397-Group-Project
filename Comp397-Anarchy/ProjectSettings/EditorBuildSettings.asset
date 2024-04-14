@@ -9,9 +9,12 @@ EditorBuildSettings:
     path: Assets/MyStuff/Scenes/MainMenu.unity
     guid: 815653c40ae805f4e8023f2be5d28a63
   - enabled: 1
+    path: Assets/MyStuff/Scenes/GameOver.unity
+    guid: 8f18625e41553c845a4b4933d00a023f
+  - enabled: 1
     path: Assets/MyStuff/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/MyStuff/Scenes/GameOver.unity
-    guid: 8f18625e41553c845a4b4933d00a023f
+    path: Assets/MyStuff/Scenes/Tutorial.unity
+    guid: f2e34cceaba38e94d8fd2fd5b7a29095
   m_configObjects: {}
