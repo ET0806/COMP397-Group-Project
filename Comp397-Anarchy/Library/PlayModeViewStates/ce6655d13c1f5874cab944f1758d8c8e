@@ -22,7 +22,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 579
-    width: 906
+    width: 901
     height: 460
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -40,7 +40,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 906, y: 439}
+  m_TargetSize: {x: 901, y: 439}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -55,8 +55,8 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -453
-    m_HBaseRangeMax: 453
+    m_HBaseRangeMin: -450.5
+    m_HBaseRangeMax: 450.5
     m_VBaseRangeMin: -219.5
     m_VBaseRangeMax: 219.5
     m_HAllowExceedBaseRangeMin: 1
@@ -67,7 +67,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -76,23 +76,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 906
+      width: 901
       height: 439
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 453, y: 219.5}
+    m_Translation: {x: 450.5, y: 219.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -453
+      x: -450.5
       y: -219.5
-      width: 906
+      width: 901
       height: 439
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 906, y: 460}
+  m_LastWindowPixelSize: {x: 901, y: 460}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
